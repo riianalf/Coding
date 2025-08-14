@@ -127,7 +127,7 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
    <div
       class="flex flex-1 flex-col lg:ms-[256px] lg:hs-overlay-minified:ms-13 w-calc(100% - 16rem) h-screen overflow-hidden">
       <header
-         class="[grid-area:main] flex top-0 h-14 sm:justify-start sm:flex-nowrap bg-gray-100 text-sm py-2 dark:bg-neutral-800 border-b border-gray-200 dark:border-neutral-700">
+         class="[grid-area:main] flex top-0 h-14 sm:justify-start sm:flex-nowrap text-sm py-2 dark:bg-neutral-800 border-b border-gray-200 dark:border-neutral-700">
          <nav
             class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between lg:justify-end">
             <!-- Navigation Toggle -->
@@ -241,7 +241,7 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
          </nav>
       </header>
 
-      <div class="flex-1 relative overflow-y-auto p-4">
+      <div class="flex-1 relative overflow-y-auto p-2 bg-gray-100 dark:bg-neutral-900">
          {{ $slot }}
       </div>
    </div>
