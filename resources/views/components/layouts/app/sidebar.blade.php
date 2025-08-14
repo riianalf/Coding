@@ -86,7 +86,7 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
 
                   <li>
                      <a class="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200"
-                        href="#">
+                        href="/daftar-pasien">
                         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                            stroke-linecap="round" stroke-linejoin="round">
@@ -101,7 +101,7 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
                            <path d="M12 18h.01" />
                            <path d="M16 18h.01" />
                         </svg>
-                        <span class="text-nowrap hs-overlay-minified:hidden">Calendar <span
+                        <span class="text-nowrap hs-overlay-minified:hidden">Registrasi <span
                               class="ms-auto py-0.5 px-1.5 inline-flex items-center gap-x-1.5 text-xs bg-gray-200 text-gray-800 rounded-full dark:bg-neutral-600 dark:text-neutral-200">New</span></span>
                      </a>
                   </li>
@@ -184,10 +184,45 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
                   </svg>
                   <span class="sr-only">Toggle</span>
                </button>
-               <button type="button"
-                  class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
-                  Button
-               </button>
+
+               <div class="hs-dropdown relative inline-flex">
+                  <button id="hs-dropdown-custom-trigger" type="button"
+                     class="hs-dropdown-toggle py-1 ps-1 pe-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                     aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                     <img class="w-8 h-auto rounded-full"
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                        alt="Avatar">
+                     <span class="text-gray-600 font-medium truncate max-w-30 dark:text-neutral-400">Maria</span>
+                     <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6" />
+                     </svg>
+                  </button>
+
+                  <div
+                     class="hs-dropdown-menu absolute transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 z-[9999]"
+                     role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-trigger">
+                     <div class="p-1 space-y-0.5">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                           href="#">
+                           Newsletter
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                           href="#">
+                           Purchases
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                           href="#">
+                           Downloads
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                           href="#">
+                           Team Account
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
             {{-- <div id="hs-navbar-alignment"
                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
@@ -206,7 +241,7 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
          </nav>
       </header>
 
-      <div class="flex-1 overflow-y-auto p-4">
+      <div class="flex-1 relative overflow-y-auto p-4">
          {{ $slot }}
       </div>
    </div>
