@@ -123,117 +123,122 @@
          </div>
       </div>
 
-      <!-- Bagian Bawah: Tabel Antrean Pasien Poli (Gabungan) -->
+      <!-- Bagian Bawah: Tabel Antrean Pasien Poli (Gabungan) Responsive -->
       <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-lg p-4">
          <h2 class="text-lg font-semibold text-blue-700 mb-2">Antrean Pasien Poli</h2>
-         <table class="hs-table-auto w-full text-sm text-left bg-white dark:bg-neutral-900 rounded-lg">
-            <thead class="bg-blue-50 dark:bg-neutral-800">
-               <tr>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">ID</th>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">Timestamp</th>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">Pasien</th>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">Jenis Daftar</th>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">Poli</th>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">Status</th>
-                  <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200">Aksi</th>
-               </tr>
-            </thead>
-            <tbody>
-               <!-- Contoh data antrean pasien poli -->
-               <tr class="hover:bg-blue-50 dark:hover:bg-neutral-800 transition">
-                  <td class="py-2 px-3 border-b">
-                     <div>DFT-001</div>
-                     <div class="text-xs text-gray-500">No. 12</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">2025-08-15 08:30</td>
-                  <td class="py-2 px-3 border-b">
-                     <div class="font-semibold">Budi Santoso</div>
-                     <div class="text-xs text-gray-500">NIK: 1234567890123456</div>
-                     <div class="text-xs text-gray-500">Jl. Melati No. 1</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-medium">Umum</span>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <div>Poli Umum</div>
-                     <div class="text-xs text-gray-500">dr. Andi</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded text-xs font-medium">Menunggu</span>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer">Edit</span>
-                     <span
-                        class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer ml-1">Hapus</span>
-                  </td>
-               </tr>
-               <tr class="hover:bg-blue-50 dark:hover:bg-neutral-800 transition">
-                  <td class="py-2 px-3 border-b">
-                     <div>DFT-002</div>
-                     <div class="text-xs text-gray-500">No. 13</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">2025-08-15 08:45</td>
-                  <td class="py-2 px-3 border-b">
-                     <div class="font-semibold">Siti Aminah</div>
-                     <div class="text-xs text-gray-500">NIK: 9876543210987654</div>
-                     <div class="text-xs text-gray-500">Jl. Kenanga No. 2</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium">BPJS</span>
-                     <div class="text-xs text-gray-500">ID: 0001234567890</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <div>Poli Gigi</div>
-                     <div class="text-xs text-gray-500">drg. Sari</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-medium">Proses</span>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer">Edit</span>
-                     <span
-                        class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer ml-1">Hapus</span>
-                  </td>
-               </tr>
-               <tr class="hover:bg-blue-50 dark:hover:bg-neutral-800 transition">
-                  <td class="py-2 px-3 border-b">
-                     <div>DFT-003</div>
-                     <div class="text-xs text-gray-500">No. 14</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">2025-08-15 09:00</td>
-                  <td class="py-2 px-3 border-b">
-                     <div class="font-semibold">Ahmad Fauzi</div>
-                     <div class="text-xs text-gray-500">NIK: 1122334455667788</div>
-                     <div class="text-xs text-gray-500">Jl. Mawar No. 3</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium">BPJS</span>
-                     <div class="text-xs text-gray-500">ID: 0009876543210</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <div>Poli Anak</div>
-                     <div class="text-xs text-gray-500">dr. Budi</div>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium">Selesai</span>
-                  </td>
-                  <td class="py-2 px-3 border-b">
-                     <span
-                        class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer">Edit</span>
-                     <span
-                        class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer ml-1">Hapus</span>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
+         <div class="overflow-x-auto rounded-lg">
+            <table class="min-w-full text-sm text-left bg-white dark:bg-neutral-900 rounded-lg">
+               <thead class="bg-blue-50 dark:bg-neutral-800">
+                  <tr>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">ID</th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Timestamp
+                     </th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Pasien
+                     </th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Jenis
+                        Daftar</th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Poli</th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Status
+                     </th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Aksi</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <!-- Contoh data antrean pasien poli -->
+                  <tr class="hover:bg-blue-50 dark:hover:bg-neutral-800 transition">
+                     <td class="py-2 px-3 border-b">
+                        <div>DFT-001</div>
+                        <div class="text-xs text-gray-500">No. 12</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">2025-08-15 08:30</td>
+                     <td class="py-2 px-3 border-b">
+                        <div class="font-semibold">Budi Santoso</div>
+                        <div class="text-xs text-gray-500">NIK: 1234567890123456</div>
+                        <div class="text-xs text-gray-500">Jl. Melati No. 1</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-medium">Umum</span>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <div>Poli Umum</div>
+                        <div class="text-xs text-gray-500">dr. Andi</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded text-xs font-medium">Menunggu</span>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer">Edit</span>
+                        <span
+                           class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer ml-1">Hapus</span>
+                     </td>
+                  </tr>
+                  <tr class="hover:bg-blue-50 dark:hover:bg-neutral-800 transition">
+                     <td class="py-2 px-3 border-b">
+                        <div>DFT-002</div>
+                        <div class="text-xs text-gray-500">No. 13</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">2025-08-15 08:45</td>
+                     <td class="py-2 px-3 border-b">
+                        <div class="font-semibold">Siti Aminah</div>
+                        <div class="text-xs text-gray-500">NIK: 9876543210987654</div>
+                        <div class="text-xs text-gray-500">Jl. Kenanga No. 2</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium">BPJS</span>
+                        <div class="text-xs text-gray-500">ID: 0001234567890</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <div>Poli Gigi</div>
+                        <div class="text-xs text-gray-500">drg. Sari</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-medium">Proses</span>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer">Edit</span>
+                        <span
+                           class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer ml-1">Hapus</span>
+                     </td>
+                  </tr>
+                  <tr class="hover:bg-blue-50 dark:hover:bg-neutral-800 transition">
+                     <td class="py-2 px-3 border-b">
+                        <div>DFT-003</div>
+                        <div class="text-xs text-gray-500">No. 14</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">2025-08-15 09:00</td>
+                     <td class="py-2 px-3 border-b">
+                        <div class="font-semibold">Ahmad Fauzi</div>
+                        <div class="text-xs text-gray-500">NIK: 1122334455667788</div>
+                        <div class="text-xs text-gray-500">Jl. Mawar No. 3</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium">BPJS</span>
+                        <div class="text-xs text-gray-500">ID: 0009876543210</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <div>Poli Anak</div>
+                        <div class="text-xs text-gray-500">dr. Budi</div>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium">Selesai</span>
+                     </td>
+                     <td class="py-2 px-3 border-b">
+                        <span
+                           class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer">Edit</span>
+                        <span
+                           class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-medium cursor-pointer ml-1">Hapus</span>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
       </div>
-   </div>
 </x-layouts.app>
