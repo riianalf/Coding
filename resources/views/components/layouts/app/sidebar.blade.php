@@ -8,15 +8,13 @@
 <body class="hs-overlay-body-open hs-overlay-body-open:overflow-hidden">
    <!-- Sidebar -->
    <div id="hs-sidebar-content-push"
-      class="hs-overlay [--body-scroll:true] lg:[--overlay-backdrop:false] [--is-layout-affect:true] [--opened:lg] [--auto-close:lg] hs-overlay-open:translate-x-0 lg:hs-overlay-layout-open:translate-x-0 lg:block lg:-translate-x-full lg:end-auto lg:bottom-0 w-64 [--body-scroll:true] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform h-full hidden fixed top-0 start-0 bottom-0 z-60 bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
+      class="hs-overlay [--body-scroll:true] lg:[--overlay-backdrop:false] [--is-layout-affect:true] [--opened:lg] [--auto-close:lg] hs-overlay-open:translate-x-0 lg:hs-overlay-layout-open:translate-x-0 lg:block lg:-translate-x-full lg:end-auto lg:bottom-0 w-64 -translate-x-full transition-all duration-300 transform h-full hidden fixed top-0 start-0 bottom-0 z-60 bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
       role="dialog" tabindex="-1" aria-label="Sidebar">
       <div class="relative flex flex-col h-full max-h-full ">
          <!-- Header -->
          <header class=" p-4 flex justify-between items-center gap-x-2">
-
             <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 dark:text-white "
                href="#" aria-label="Brand">Brand</a>
-
             <div class="lg:hidden -me-2">
                <!-- Close Button -->
                <button type="button"
@@ -34,7 +32,6 @@
             </div>
          </header>
          <!-- End Header -->
-
          <!-- Body -->
          <nav
             class="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
@@ -352,14 +349,11 @@
    <!-- End Sidebar -->
 
    <!-- Content -->
-   {{-- <div class="flex flex-1 flex-col lg:ms-[256px] lg:hs-overlay-minified:ms-13 w-calc(100% - 16rem) h-screen overflow-hidden"></div> --}}
-   <div class="sm:hs-overlay-layout-open:ms-64 bg-white transition-all duration-300 dark:bg-neutral-800">
-      <header
-         class="[grid-area:main] flex top-0 h-14 sm:justify-start sm:flex-nowrap text-sm py-2 dark:bg-neutral-800 border-b border-gray-200 dark:border-neutral-700">
-         <nav
-            class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between lg:justify-end">
+   <div class="h-full lg:hs-overlay-layout-open:ms-64 bg-slate-100 transition-all duration-300 dark:bg-neutral-800">
+      <header class="border flex flex-wrap h-14 sm:justify-start sm:flex-nowrap bg-white text-sm dark:bg-neutral-800">
+         <nav class="mx-auto px-2 flex flex-wrap basis-full items-center justify-between">
             <!-- Navigation Toggle -->
-            <div class="p-2">
+            <div class=" p-2">
                <button type="button"
                   class="flex justify-center items-center gap-x-3 size-8 text-sm text-gray-600 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                   aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-sidebar-content-push"
@@ -382,6 +376,8 @@
                </button>
             </div>
             <!-- End Navigation Toggle -->
+            {{-- <a class="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80"
+               href="#">Brand</a> --}}
             <div class="sm:order-3 flex items-center gap-x-2">
                <button type="button"
                   class="sm:hidden hs-collapse-toggle relative size-9 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
@@ -402,70 +398,127 @@
                   </svg>
                   <span class="sr-only">Toggle</span>
                </button>
-
-               <div class="hs-dropdown relative inline-flex">
-                  <button id="hs-dropdown-custom-trigger" type="button"
-                     class="hs-dropdown-toggle py-1 ps-1 pe-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-                     aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                     <img class="w-8 h-auto rounded-full"
-                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
-                        alt="Avatar">
-                     <span class="text-gray-600 font-medium truncate max-w-30 dark:text-neutral-400">Maria</span>
-                     <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m6 9 6 6 6-6" />
-                     </svg>
-                  </button>
-
-                  <div
-                     class="hs-dropdown-menu absolute transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 z-[9999]"
-                     role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-trigger">
-                     <div class="p-1 space-y-0.5">
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                           href="#">
-                           Newsletter
-                        </a>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                           href="#">
-                           Purchases
-                        </a>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                           href="#">
-                           Downloads
-                        </a>
-                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                           href="#">
-                           Team Account
-                        </a>
-                     </div>
-                  </div>
+               <button type="button"
+                  class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+                  Button
+               </button>
+            </div>
+            <div id="hs-navbar-alignment"
+               class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
+               aria-labelledby="hs-navbar-alignment-collapse">
+               <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+                  <a class="font-medium text-blue-500 focus:outline-hidden" href="#"
+                     aria-current="page">Landing</a>
+                  <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                     href="#">Account</a>
+                  <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                     href="#">Work</a>
+                  <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                     href="#">Blog</a>
                </div>
             </div>
-            {{-- <div id="hs-navbar-alignment"
-                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
-                aria-labelledby="hs-navbar-alignment-collapse">
-                <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-                   <a class="font-medium text-blue-500 focus:outline-hidden" href="#"
-                      aria-current="page">Landing</a>
-                   <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                      href="#">Account</a>
-                   <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                      href="#">Work</a>
-                   <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                      href="#">Blog</a>
-                </div>
-             </div> --}}
          </nav>
       </header>
-
-      <div class="flex-1 relative overflow-y-auto p-2 bg-gray-100 dark:bg-neutral-900">
+      <div
+         class="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
          {{ $slot }}
       </div>
    </div>
    <!-- End Content -->
 
+   {{-- <div class="flex flex-1 flex-col h-14 relative mx-auto justify-between">
+      <!-- Navigation Toggle -->
+      <div class=" p-2">
+         <button type="button"
+            class="flex justify-center items-center gap-x-3 size-8 text-sm text-gray-600 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+            aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-sidebar-content-push"
+            aria-label="Toggle navigation" data-hs-overlay="#hs-sidebar-content-push">
+            <svg class="sm:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+               height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+               <rect width="18" height="18" x="3" y="3" rx="2" />
+               <path d="M15 3v18" />
+               <path d="m8 9 3 3-3 3" />
+            </svg>
+            <svg class="hidden sm:block shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+               height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+               <rect width="18" height="18" x="3" y="3" rx="2" />
+               <path d="M15 3v18" />
+               <path d="m10 15-3-3 3-3" />
+            </svg>
+            <span class="sr-only">Navigation Toggle</span>
+         </button>
+      </div>
+      <!-- End Navigation Toggle -->
+      <div class="hs-dropdown relative inline-flex">
+         <button id="hs-dropdown-with-header" type="button"
+            class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+            Actions
+            <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+               height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+               <path d="m6 9 6 6 6-6" />
+            </svg>
+         </button>
 
+         <div
+            class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700"
+            role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-with-header">
+            <div class="py-3 px-4 border-b border-gray-200 dark:border-neutral-700">
+               <p class="text-sm text-gray-500 dark:text-neutral-400">Signed in as</p>
+               <p class="text-sm font-medium text-gray-800 dark:text-neutral-300">james@site.com</p>
+            </div>
+            <div class="p-1 space-y-0.5">
+               <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                  href="#">
+                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                     <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                  </svg>
+                  Newsletter
+               </a>
+               <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                  href="#">
+                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <circle cx="8" cy="21" r="1" />
+                     <circle cx="19" cy="21" r="1" />
+                     <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                  </svg>
+                  Purchases
+               </a>
+               <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                  href="#">
+                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                     <path d="M12 12v9" />
+                     <path d="m8 17 4 4 4-4" />
+                  </svg>
+                  Downloads
+               </a>
+               <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                  href="#">
+                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                     <circle cx="9" cy="7" r="4" />
+                     <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  Team Account
+               </a>
+            </div>
+         </div>
+      </div>
+   </div> --}}
    @fluxScripts
 </body>
 
