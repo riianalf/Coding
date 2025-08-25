@@ -1,36 +1,40 @@
 <x-layouts.app :title="__('Dashboard')">
    <!-- Features -->
-   <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+   <div
+      class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-2xl px-4 py-10 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 mx-auto">
       <!-- Grid -->
-      <div class="grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
+      <div class="grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-4 lg:gap-8">
          <!-- Stats -->
          <div
             class="max-w-xs flex flex-col bg-white border border-gray-200 border-t-4 border-t-blue-600 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70 p-4">
             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-neutral-200">Accuracy rate</h4>
-            <p class="mt-2 sm:mt-3 text-2xl sm:text-2xl font-bold text-blue-600">99.95%</p>
+            <p class="mt-2 sm:mt-3 text-3xl font-bold text-blue-600">99.95%</p>
             <p class="mt-1 text-gray-500 dark:text-neutral-500">in fulfilling orders</p>
          </div>
          <!-- End Stats -->
 
          <!-- Stats -->
-         <div>
+         <div
+            class="max-w-xs flex flex-col bg-white border border-gray-200 border-t-4 border-t-blue-600 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70 p-4">
             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-neutral-200">Startup businesses</h4>
-            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">2,000+</p>
+            <p class="mt-2 sm:mt-3 text-3xl font-bold text-blue-600">2,000+</p>
             <p class="mt-1 text-gray-500 dark:text-neutral-500">partner with Preline</p>
          </div>
          <!-- End Stats -->
 
          <!-- Stats -->
-         <div>
+         <div
+            class="max-w-xs flex flex-col bg-white border border-gray-200 border-t-4 border-t-blue-600 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70 p-4">
             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-neutral-200">Happy customer</h4>
-            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">85%</p>
+            <p class="mt-2 sm:mt-3 text-3xl font-bold text-blue-600">85%</p>
             <p class="mt-1 text-gray-500 dark:text-neutral-500">this year alone</p>
          </div>
          <!-- End Stats -->
          <!-- Stats -->
-         <div>
+         <div
+            class="max-w-xs flex flex-col bg-white border border-gray-200 border-t-4 border-t-blue-600 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70 p-4">
             <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-neutral-200">Happy customer</h4>
-            <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">85%</p>
+            <p class="mt-2 sm:mt-3 text-3xl font-bold text-blue-600">85%</p>
             <p class="mt-1 text-gray-500 dark:text-neutral-500">this year alone</p>
          </div>
          <!-- End Stats -->
