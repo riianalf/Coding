@@ -20,6 +20,8 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
 
     Route::view('daftar-pasien', 'daftar-pasien')->name('daftar-pasien');
+    Route::view('rekam-medis/pasien', 'pasien')->name('rekam-medis.pasien');
+    // Route::view('rekam_medis.pasien', 'pasien')->name('pasien');
 });
 
 require __DIR__.'/auth.php';

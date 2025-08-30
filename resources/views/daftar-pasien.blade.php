@@ -1,18 +1,94 @@
 <x-layouts.app :title="'Registrasi Pasien'">
    <div class="p-4 space-y-8">
       <!-- Registrasi Pasien Rawat Jalan (Fresh Style) -->
-      <div class="bg-white dark:bg-neutral-900 rounded-xl shadow-lg p-8 mb-6">
-         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
-            <div>
+      <div class="mx-auto">
+         <div class="bg-white rounded-xl shadow-xl p-4 sm:p-7 dark:bg-neutral-800">
+            <div class="mb-8">
+               <h2 class="text-xl font-bold text-gray-800 dark:text-neutral-200">
+                  Registrasi Pasien
+               </h2>
+               <p class="text-sm text-gray-600 dark:text-neutral-400">
+                  Manage your name, password and account settings.
+               </p>
+            </div>
+            <form>
+               <!-- Grid -->
+               <div class="grid sm:grid-cols-12 gap-2 sm:gap-6">
+
+                  <div class="sm:col-span-3">
+                     <label for="af-account-full-name"
+                        class="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200">
+                        Cari Nama Pasien
+                     </label>
+                     <div class="hs-tooltip inline-block">
+                        <svg class="hs-tooltip-toggle ms-1 inline-block size-3 text-gray-400 dark:text-neutral-600"
+                           xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                           viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                           <path
+                              d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                        <span
+                           class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible w-40 text-center z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-2xs dark:bg-neutral-700"
+                           role="tooltip">
+                           Displayed on public forums, such as Preline
+                        </span>
+                     </div>
+                  </div>
+                  <!-- End Col -->
+                  <div class="sm:col-span-9">
+                     <input id="af-account-full-name" type="text"
+                        class="py-1.5 sm:py-2 px-3 pe-11 block w-full border-gray-200 shadow-2xs sm:text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                        placeholder="Nama Pasien">
+                     <!-- Popover -->
+                     <div class="hs-tooltip [--trigger:focus] [--placement:bottom] inline-block">
+                        <button type="button"
+                           class="hs-tooltip-toggle py-1.5 sm:py-2 px-3 pe-11 block w-full border-gray-200 shadow-2xs sm:text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 disabled:pointer-events-none">
+                           {{-- <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round">
+                              <path d="m18 15-6-6-6 6"></path>
+                           </svg> --}}
+                           Cari Nama Pasien
+                           <span
+                              class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border border-gray-200 text-sm text-gray-600 rounded-lg shadow-md dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400"
+                              role="tooltip">
+                              Focus me
+                           </span>
+                        </button>
+                     </div>
+                     <!-- End Popover -->
+                  </div>
+                  <!-- End Col -->
+               </div>
+               <!-- End Grid -->
+
+               <div class="mt-5 flex justify-end gap-x-2">
+                  <button type="button"
+                     class="py-1 px-2 sm:p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                     Tambah Pasien Baru
+                  </button>
+                  <button type="button"
+                     class="py-1 px-2 sm:p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                     Cancel
+                  </button>
+                  <button type="button"
+                     class="py-1 px-2 sm:p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                     Save changes
+                  </button>
+               </div>
+            </form>
+
+            {{-- <div>
                <h1 class="text-3xl font-extrabold text-gray-800 dark:text-white mb-1">Pendaftaran Rawat Jalan</h1>
                <div class="font-semibold text-lg text-gray-700 dark:text-neutral-200">Pencarian Pasien</div>
-            </div>
-            <button
+            </div> --}}
+            {{-- <button
                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow flex items-center gap-2 transition">
                <i class="flaticon-add-user text-lg"></i> Peserta Baru
-            </button>
+            </button> --}}
          </div>
-         <form class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4 border">
+         {{-- <form class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4 border">
             <div class="col-span-1">
                <select class="w-full rounded border-gray-300 focus:border-blue-500 focus:ring-blue-500">
                   <option>No. JKN-KIS</option>
@@ -33,7 +109,9 @@
                <button type="submit"
                   class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow mt-1">Cari</button>
             </div>
-         </form>
+         </form> --}}
+
+
          <div class="text-xs text-blue-700 italic mb-2">Tidak ada pasien dengan pencarian tersebut.</div>
          <div class="overflow-x-auto rounded-lg border border-blue-100">
             <table class="min-w-full text-xs bg-blue-50">
@@ -64,7 +142,8 @@
                      <td class="py-2 px-3 border-b">Jl. Melati No. 1</td>
                      <td class="py-2 px-3 border-b">-</td>
                      <td class="py-2 px-3 border-b">Laki-laki</td>
-                     <td class="py-2 px-3 border-b">1990-01-01<br><span class="text-xs text-gray-500">35 tahun</span>
+                     <td class="py-2 px-3 border-b">1990-01-01<br><span class="text-xs text-gray-500">35
+                           tahun</span>
                      </td>
                   </tr>
                   <tr>
@@ -81,7 +160,8 @@
                      <td class="py-2 px-3 border-b">Jl. Kenanga No. 2</td>
                      <td class="py-2 px-3 border-b">0001234567890</td>
                      <td class="py-2 px-3 border-b">Perempuan</td>
-                     <td class="py-2 px-3 border-b">1992-05-10<br><span class="text-xs text-gray-500">33 tahun</span>
+                     <td class="py-2 px-3 border-b">1992-05-10<br><span class="text-xs text-gray-500">33
+                           tahun</span>
                      </td>
                   </tr>
                   <!-- Contoh: tampilkan maksimal 5 baris, tambahkan baris dummy jika kurang dari 5 -->
@@ -130,17 +210,23 @@
             <table class="min-w-full text-sm text-left bg-white dark:bg-neutral-900 rounded-lg">
                <thead class="bg-blue-50 dark:bg-neutral-800">
                   <tr>
-                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">ID</th>
-                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Timestamp
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">ID
                      </th>
-                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Pasien
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">
+                        Timestamp
+                     </th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">
+                        Pasien
                      </th>
                      <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Jenis
                         Daftar</th>
-                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Poli</th>
-                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Status
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Poli
                      </th>
-                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Aksi</th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">
+                        Status
+                     </th>
+                     <th class="py-2 px-3 font-semibold text-blue-700 dark:text-neutral-200 whitespace-nowrap">Aksi
+                     </th>
                   </tr>
                </thead>
                <tbody>
