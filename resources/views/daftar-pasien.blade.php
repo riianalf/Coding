@@ -80,6 +80,33 @@
                      </div>
 
                   </div>
+
+                  <!-- Alamat otomatis -->
+                  <div class="mt-6 sm:col-span-12 border-t pt-4">
+                     <h3 class="text-sm font-semibold text-gray-700 dark:text-neutral-200 mb-2">Alamat</h3>
+                     <div class="grid sm:grid-cols-12 gap-2 sm:gap-4">
+                        <div class="sm:col-span-6">
+                           <label class="block text-xs mb-1">Desa / Kelurahan</label>
+                           <input id="input-desa" type="text" class="w-full rounded border-gray-300 p-2"
+                              placeholder="Ketik nama desa...">
+                        </div>
+                        <div class="sm:col-span-6">
+                           <label class="block text-xs mb-1">Kecamatan</label>
+                           <input id="input-kecamatan" type="text" class="w-full rounded border-gray-300 p-2"
+                              placeholder="Kecamatan" readonly>
+                        </div>
+                        <div class="sm:col-span-6">
+                           <label class="block text-xs mb-1">Kabupaten / Kota</label>
+                           <input id="input-kabupaten" type="text" class="w-full rounded border-gray-300 p-2"
+                              placeholder="Kabupaten / Kota" readonly>
+                        </div>
+                        <div class="sm:col-span-6">
+                           <label class="block text-xs mb-1">Provinsi</label>
+                           <input id="input-provinsi" type="text" class="w-full rounded border-gray-300 p-2"
+                              placeholder="Provinsi" readonly>
+                        </div>
+                     </div>
+                  </div>
                   <div class="sm:col-span-1 border">
                      <div
                         class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
@@ -103,17 +130,8 @@
                      </div>
                   </div>
                </div>
-
             </form>
 
-            {{-- <div>
-               <h1 class="text-3xl font-extrabold text-gray-800 dark:text-white mb-1">Pendaftaran Rawat Jalan</h1>
-               <div class="font-semibold text-lg text-gray-700 dark:text-neutral-200">Pencarian Pasien</div>
-            </div> --}}
-            {{-- <button
-               class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow flex items-center gap-2 transition">
-               <i class="flaticon-add-user text-lg"></i> Peserta Baru
-            </button> --}}
          </div>
          {{-- <form class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4 border">
             <div class="col-span-1">
@@ -354,4 +372,5 @@
             </table>
          </div>
       </div>
+      <script src="/js/address-autofill.js"></script>
 </x-layouts.app>

@@ -1,0 +1,26 @@
+[
+    {
+        "desa": "Cibuntu",
+        "kecamatan": "Cimahi Selatan",
+        "kabupaten": "Kota Cimahi",
+        "provinsi": "Jawa Barat"
+    },
+    {
+        "desa": "Cimahi",
+        "kecamatan": "Cimahi Tengah",
+        "kabupaten": "Kota Cimahi",
+        "provinsi": "Jawa Barat"
+    },
+    {
+        "desa": "Kraton",
+        "kecamatan": "Gondokusuman",
+        "kabupaten": "Kota Yogyakarta",
+        "provinsi": "DI Yogyakarta"
+    },
+    {
+        "desa": "Menteng",
+        "kecamatan": "Menteng",
+        "kabupaten": "Kota Jakarta Pusat",
+        "provinsi": "DKI Jakarta"
+    }
+]
